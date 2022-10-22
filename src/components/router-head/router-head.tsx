@@ -23,6 +23,10 @@ export const RouterHead = component$(() => {
         rel="stylesheet"
       />
 
+      <meta property="og:site_name" content="Qwik" />
+      <meta name="twitter:site" content="@QwikDev" />
+      <meta name="twitter:title" content="Qwik" />
+
       {head.meta.map((m) => (
         <meta {...m} />
       ))}
