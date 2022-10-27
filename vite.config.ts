@@ -6,13 +6,14 @@ import netlifyEdge from "@netlify/vite-plugin-netlify-edge";
 
 export default defineConfig(() => {
   return {
-    ssr: { target: "node", format: "cjs", external: true },
+    ssr: { target: "node", noExternal: true },
     plugins: [
       qwikCity(),
       qwikVite({
         ssr: { outDir: "netlify/edge-functions/entry.netlify-edge" },
       }),
       tsconfigPaths(),
+      netlifyEdge({ functionName: "entry.netlify-edge" }),
       netlifyEdge({ functionName: "entry.netlify-edge" }),
     ],
   };
