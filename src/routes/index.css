@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100vh;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.of-hidden {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+
+.flex-no-shrink {
+  flex-shrink: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.p-s {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* index */
+
+.index-box {
+  padding: 5vh;
+}
