@@ -2,6 +2,9 @@ import { component$, useStyles$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import Index from './index.css';
 import ExpandingCards from './daybyday/expanding-cards/index'
+import ProgressSteps from './daybyday/progress-steps/index'
+
+
 
 export default component$(() => {
   useStyles$(Index)
@@ -17,7 +20,14 @@ export default component$(() => {
             <h3 class='text-center p-s'><a href='/daybyday/expanding-cards'>day01</a></h3>
           </div>
         </div>
-        <div class='flex-1 flex-no-shrink'>1</div>
+        <div class='flex-1 flex-no-shrink'>
+          <div className="flex flex-col full">
+            <div className="flex-1">
+              <ProgressSteps></ProgressSteps>
+            </div>
+            <h3 class='text-center p-s'><a href='/daybyday/progress-steps'>day02</a></h3>
+          </div>
+        </div>
         <div class='flex-1 flex-no-shrink'>1</div>
         <div class='flex-1 flex-no-shrink'>1</div>
       </div>
