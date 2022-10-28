@@ -11,7 +11,7 @@ export default component$(() => {
 
   return (
     <div class='index-box full flex flex-col'>
-      <div class='flex of-hidden' style='height:50%'>
+      <div class='flex of-hidden' style='height:40%'>
         <div class='flex-1 flex-no-shrink'>
           <div className="flex flex-col full">
             <div className="flex-1">
@@ -31,11 +31,16 @@ export default component$(() => {
         <div class='flex-1 flex-no-shrink'>1</div>
         <div class='flex-1 flex-no-shrink'>1</div>
       </div>
-      <div class='flex of-hidden' style='height:50%'>
+      <div class='flex of-hidden' style='height:40%'>
         <div class='flex-1 flex-no-shrink'>1</div>
         <div class='flex-1 flex-no-shrink'>1</div>
         <div class='flex-1 flex-no-shrink'>1</div>
         <div class='flex-1 flex-no-shrink'>1</div>
+      </div>
+      <div class="text-center text-white">
+        <span>github地址:  </span>
+        <a href='https://github.com/158910214/day-by-day-qwik' style='color:lightskyblue'>https://github.com/158910214/day-by-day-qwik</a>
+        <div>欢迎star </div>
       </div>
     </div>
   );

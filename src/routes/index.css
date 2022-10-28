@@ -38,7 +38,12 @@ body {
 .text-center {
   text-align: center;
 }
-
+.text-white {
+  color: white;
+}
+.text-lightskyblue {
+  color: lightskyblue;
+}
 .p-s {
   padding-top: 6px;
   padding-bottom: 6px;
